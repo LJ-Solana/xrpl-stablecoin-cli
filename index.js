@@ -5,6 +5,7 @@ const burn = require('./commands/burn');
 const send = require('./commands/send');
 const balance = require('./commands/balance');
 const freeze = require('./commands/freeze');
+const createWallet = require('./commands/create-wallet');
 
 const program = new Command();
 
@@ -12,6 +13,11 @@ program
   .name('XRPL Stablecoin CLI 💵')
   .description('A CLI tool to issue and manage stablecoins on the XRPL 🌎')
   .version('1.0.0');
+
+program
+  .command('create-wallet')
+  .description('Create a new wallet and optionally fund it with testnet XRP 🆕')
+  .action(createWallet);
 
 program
   .command('mint')
