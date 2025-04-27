@@ -1,6 +1,6 @@
 const { client, wallet, connect, disconnect } = require('../utils/xrplClient');
-const ora = require('ora');
-const chalk = require('chalk');
+const ora = require('ora').default;
+const chalk = require('chalk').default;
 
 async function burn(amount) {
   const spinner = ora('Connecting to XRPL...').start();

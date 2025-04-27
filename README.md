@@ -9,6 +9,7 @@ Built with Node.js, `xrpl`, and `commander` for clean, fun XRPL ops. 🛠️
 ## ⚡ Features
 
 - Create new wallets with QR code support 🆕
+- Get current wallet information 📋
 - Mint stablecoins to any address ✨
 - Burn (redeem) stablecoins 🔥
 - Send stablecoins to a wallet 🚚
@@ -41,6 +42,15 @@ This will:
 - Show a QR code for the wallet address
 - Optionally fund the wallet with testnet XRP
 
+### Get Current Wallet Information
+```bash
+xrpl-stablecoin get-wallet
+```
+This will:
+- Display the current wallet's address and public key
+- Show a QR code for the wallet address
+- Display the current XRP balance
+
 ### Other Commands
 ```bash
 # Mint stablecoins
@@ -67,4 +77,5 @@ Create a `.env` file in the project root with your XRPL node configuration:
 
 ```env
 XRPL_NODE=wss://s.altnet.rippletest.net:51233
+ISSUER_SECRET=your_wallet_seed_here
 ```

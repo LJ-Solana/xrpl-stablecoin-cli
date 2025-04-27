@@ -6,6 +6,7 @@ const send = require('./commands/send');
 const balance = require('./commands/balance');
 const freeze = require('./commands/freeze');
 const createWallet = require('./commands/create-wallet');
+const getWalletInfo = require('./commands/get-wallet');
 
 const program = new Command();
 
@@ -18,6 +19,11 @@ program
   .command('create-wallet')
   .description('Create a new wallet and optionally fund it with testnet XRP 🆕')
   .action(createWallet);
+
+program
+  .command('get-wallet')
+  .description('Get information about the current wallet 📋')
+  .action(getWalletInfo);
 
 program
   .command('mint')
