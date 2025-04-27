@@ -51,11 +51,32 @@ This will:
 - Show a QR code for the wallet address
 - Display the current XRP balance
 
+### Mint Stablecoins
+```bash
+xrpl-stablecoin mint
+```
+This will prompt you for:
+1. Stablecoin symbol (e.g., USD, EUR, GBP)
+2. Amount to mint
+3. Whether to generate a new wallet for the destination (default: yes)
+
+If you choose to generate a new wallet, it will:
+- Create a new XRPL wallet
+- Display the new address and seed
+- Fund it with testnet XRP
+- Set up the trust line
+- Mint the stablecoins to it
+
+If you choose to use an existing wallet, you'll need to provide:
+- The destination address
+- The destination wallet's seed (for trust line setup)
+
+After successful minting, you'll receive:
+- A clickable link to view the transaction on the XRPL testnet explorer
+- The ledger index where the transaction was recorded
+
 ### Other Commands
 ```bash
-# Mint stablecoins
-xrpl-stablecoin mint <amount> <destination>
-
 # Burn stablecoins
 xrpl-stablecoin burn <amount>
 
