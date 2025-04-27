@@ -28,8 +28,6 @@ program
 program
   .command('mint')
   .description('Mint stablecoins to an address ✨')
-  .argument('<amount>', 'Amount to mint')
-  .argument('<destination>', 'Destination address')
   .action(mint);
 
 program
