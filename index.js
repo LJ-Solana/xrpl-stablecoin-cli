@@ -33,7 +33,6 @@ program
 program
   .command('burn')
   .description('Burn (redeem) stablecoins 🔥')
-  .argument('<amount>', 'Amount to burn')
   .action(burn);
 
 program
