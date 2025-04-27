@@ -1,6 +1,6 @@
 # XRPL Stablecoin CLI 💵
 
-A powerful, emoji-powered CLI tool to issue and manage stablecoins on the XRP Ledger (XRPL) 🌎✨.
+A simple CLI tool to issue and manage stablecoins on the XRP Ledger (XRPL) 🌎✨.
 
 Built with Node.js, `xrpl`, and `commander` for clean, fun XRPL ops. 🛠️
 
