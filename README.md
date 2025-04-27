@@ -111,5 +111,4 @@ Create a `.env` file in the project root with your XRPL node configuration:
 
 ```env
 XRPL_NODE=wss://s.altnet.rippletest.net:51233
-ISSUER_SECRET=your_wallet_seed_here
 ```
