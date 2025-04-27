@@ -1,0 +1,21 @@
+{
+  "name": "xrpl-stablecoin-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool to issue and manage stablecoins on the XRPL 🌎",
+  "main": "index.js",
+  "bin": {
+    "xrpl-stablecoin": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Luke",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.4.0",
+    "ora": "^7.0.1",
+    "xrpl": "^2.11.0"
+  }
+}
