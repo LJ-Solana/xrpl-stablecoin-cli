@@ -75,11 +75,24 @@ After successful minting, you'll receive:
 - A clickable link to view the transaction on the XRPL testnet explorer
 - The ledger index where the transaction was recorded
 
+### Burn Stablecoins
+```bash
+xrpl-stablecoin burn
+```
+This will prompt you for:
+1. Which wallet to burn from (current or custom)
+2. If custom wallet:
+   - The wallet address
+   - The wallet seed
+3. Select which stablecoin to burn (shows available balances)
+4. Amount to burn
+
+After successful burning, you'll receive:
+- A clickable link to view the transaction on the XRPL testnet explorer
+- The ledger index where the transaction was recorded
+
 ### Other Commands
 ```bash
-# Burn stablecoins
-xrpl-stablecoin burn <amount>
-
 # Send stablecoins
 xrpl-stablecoin send <amount> <address>
 
